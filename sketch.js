@@ -120,9 +120,6 @@ function keyReleased () {
 //Display arrow and Tranjectory
 function showArrows(index, arrows) {
  arrows[index].display();
-  if (arrows.body.position.y>= height || arrows.body.position.x >= width - 350) {
-    Matter.World.remove(world, arrow.body);
-    arrows.splice(index, 1);
-  }
+  
 
 }
